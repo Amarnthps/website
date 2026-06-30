@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building application...'
-                bat 'docker build -t website-app .'
+                sh 'docker build -t website-app .'
             }
         }
 
